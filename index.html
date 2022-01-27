@@ -1,70 +1,136 @@
 <!DOCTYPE html>
 <html>
+   
 <head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+        integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>JongKwan github page</title>
+    
     <style>
-        
+    *{
+        font-family: 'Gamja Flower', cursive;
+    }
+    body{
+        background-color: aliceblue;
+    }
+    .jumbotron{
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        margin-top: 32px;
+        background-image: url("https://image.shutterstock.com/image-photo/minimal-work-space-creative-flat-260nw-1012338877.jpg");
+        background-size: cover;
+        border: 8px solid rgb(186, 190, 216);
+    }
+    .introduce{
+        font-size: 20px;
+    }
+    .my-4{
+        border: 0;
+        height: 3px;
+        background-color: rgb(186, 190, 216);
+    }
+    .display-4{
+       
+    }
     </style>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             
         });
     </script>
 </head>
+
 <body>
-    <div class="jumbotron">
-        <h1 class="display-4">Java Web Programmer</h1>
-        <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt at quibusdam asperiores assumenda minus deserunt culpa fuga! Libero adipisci quas, neque facere voluptatum eius totam consectetur laudantium repudiandae sit. Impedit.
-        </p>
-        <hr class="my-4">
-        <p>
-            심플 회원제 게시물을 시연해보세요
-        </p>
-        <a href="http://13.209.84.192/spring-ex00-teacher/board/list" class="btn btn-primary btn-lg">시연하기</a>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <!-- .jumbotron>h1.display-4{Java Web Programmer} -->
+                <div class="jumbotron">
+                    <h1 class="display-4">Welcome!</h1>
+                    <p class="introduce">
+                        종관이의 간단한 프로젝트 포트폴리오입니다.
+                    </p>
+                    <!-- p.lead>lorem -->
+                    <p class="lead">
+                        봐주셔서 감사합니다 ^.^
+                        <br>
+                        중앙정보처리학원에서 약 6개월 간 공부한 내용입니다.
+                        <br>
+                        대부분 비율과 설정이 웹으로 맞춰져 있으니 웹으로 보시길 권장합니다!!
+                    </p>
+                    <hr class="my-4">
+                    <p>
+                        각각의 게시물을 시연해보세요!!
+                    </p>
+                </div>
+
+                <!-- .card-deck>.card*2>.card-body>h5.card-title>lorem1^p.card-text>lorem^^.card-footer>a.btn.btn-primary*2 -->
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Spring MVC 심플 회원제 게시판
+                            </h5>
+                            <p class="card-text">
+                                Spring MVC를 활용한 간단한 회원제 게시판입니다.
+                                <br>
+                                (수업시간에 함께 진행한 내용입니다)
+                            <ul>
+                                <li>HTML, CSS</li>
+                                <li>JavaScript, Jquery</li>
+                                <li>Java, Spring MVC</li>
+                                <li>JDBC, Mybatis</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/sebaek/spring-ex00-20211202"
+                                class="btn btn-outline-primary">코드보기</a>
+                            <a href="http://3.35.173.109/spr1/board/list" class="btn btn-primary">시연하기</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Spring MVC 팀 프로젝트 1월 24일 발표
+                            </h5>
+                            <p class="card-text">
+                                Spring MVC 활용한 동네 커뮤니티 사이트
+                            <ul>
+                                <li>HTML, CSS</li>
+                                <li>JavaScript, Jquery</li>
+                                <li>Java, Spring MVC</li>
+                                <li>JDBC, Mybatis</li>
+                                <li>React</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/kjk732/team1-2.git" class="btn btn-outline-primary">코드보기</a>
+                            <a href="http://13.209.84.192/controller1/" class="btn btn-primary">시연하기</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    <div class="card-deck">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">
-                    Spring MVC 심플 회원제 게시판
-                </h5>
-                <p class="card-text">
-                    Spring MVC를 활용한 간단한 회원제 게시판입니다.
-                    <ul>
-                        <li>HTML, CSS</li>
-                        <li>JS, Jquery</li>
-                        <li>JAVA, Spring</li>
-                        <li>JDBC</li>
-                        <li>Mybatis</li>
-                    </ul>
-                </p>
-            </div>
-            <div class="card-footer">
-                <a href="https://github.com/kjk732/kjk732.github.io" class="btn btn-primary">코드보기</a>
-                <a href="http://13.209.84.192/spring-ex00-teacher/board/list" class="btn btn-primary">시연하기</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">
-                    Spring MVC 팀프로젝트
-                </h5>
-                <p class="card-text">
-                    Spring MVC 활용한 영화예매 사이트
-                </p>
-            </div>
-            <div class="card-footer">
-                <a href="https://github.com/kjk732/kjk732.github.io" class="btn btn-primary"></a>
-                <a href="http://13.209.84.192/spring-ex00-teacher/board/list" class="btn btn-primary"></a>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"
+        integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>
